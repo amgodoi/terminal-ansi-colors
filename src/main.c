@@ -27,65 +27,64 @@ void change_terminal_color(wchar_t *color);
 
 int main()
 {
-	setlocale(LC_CTYPE, "");
+    setlocale(LC_CTYPE, "");
 
     wchar_t *s = L"Hello, world!!!";
-    
+
     change_terminal_color(COLOR_BLACK);
     wprintf(L"%ls\n", s);
-    
+
     change_terminal_color(COLOR_BRIGTH_BLACK);
     wprintf(L"%ls\n", s);
-    
+
     change_terminal_color(COLOR_RED);
     wprintf(L"%ls\n", s);
-    
+
     change_terminal_color(COLOR_BRIGTH_RED);
     wprintf(L"%ls\n", s);
-    
+
     change_terminal_color(COLOR_GREEN);
     wprintf(L"%ls\n", s);
-    
+
     change_terminal_color(COLOR_BRIGTH_GREEN);
     wprintf(L"%ls\n", s);
-    
+
     change_terminal_color(COLOR_YELLOW);
     wprintf(L"%ls\n", s);
-    
+
     change_terminal_color(COLOR_BRIGTH_YELLOW);
     wprintf(L"%ls\n", s);
-    
+
     change_terminal_color(COLOR_BLUE);
     wprintf(L"%ls\n", s);
-    
+
     change_terminal_color(COLOR_BRIGHT_BLUE);
     wprintf(L"%ls\n", s);
-    
+
     change_terminal_color(COLOR_PURPLE);
     wprintf(L"%ls\n", s);
-    
+
     change_terminal_color(COLOR_BRIGHT_PURPLE);
     wprintf(L"%ls\n", s);
-    
+
     change_terminal_color(COLOR_CYAN);
     wprintf(L"%ls\n", s);
-    
+
     change_terminal_color(COLOR_BRIGHT_CYAN);
     wprintf(L"%ls\n", s);
-    
+
     change_terminal_color(COLOR_WHITE);
     wprintf(L"%ls\n", s);
-    
+
     change_terminal_color(COLOR_BRIGHT_WHITE);
     wprintf(L"%ls\n", s);
-    
+
     change_terminal_color(COLOR_RESET_TO_DEFAULT);
 
-	return 0;
+    return 0;
 }
 
 void change_terminal_color(wchar_t *color)
 {
     wprintf(L"%ls", color);
 }
-
